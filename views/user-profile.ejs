@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="/css/user.css" />
+<header>
+  <h2>Hello User</h2>
+  <div class="buttons">
+    <div id="sign-out">
+      <a href="/user/destroy">Sign Out</a>
+    </div>
+    <div id="reset-btn">
+      <a href="/user/reset">Reset Password</a>
+    </div>
+  </div>
+</header>
+<main>
+  <div id="btn">
+    <button type="submit" value="students"><a href="/student/newStudent">Students</a></button>
+    <button type="submit" value="interviews"><a href="/interview/newInterview">Interviews</a></button>
+  </div>
+  <div id="student-list" class="list">
+    <ul>
+      <% for(student of students){%>
+        <li>
+          <div id="student-info">
+            Name:<%= student?.name %><br>
+            Email:<%= student?.email %><br>
+            College:<%= student?.college %><br>
+            Batch:<%= student?.batch %><br>
+            Status:<%= student?.status %>
+          </div>
+        </li>
+    <%} %>
+    </ul>
+    <button id="add-btn" type="submit" value="students"><a href="/student/newStudent">Add a Student</a></button>
+    </div>
+
+    <div id="interview-list" class="list">
+    <ul>
+      <% for(interview of interviews){%>
+        <li>
+          <div id="student-info">
+            Name:<%= interview?.student[0].name %><br>
+            Email:<%= interview?.student[0].email %><br>
+            Company:<%= interview?.company %><br>
+            Date:<%= interview?.date %><br>
+            Result:
+            <form action="">
+              <input type="radio" id="pass" name="result" value="PASS">
+              <label for="pass">PASS</label>
+              <input type="radio" id="fail" name="result" value="FAIL">
+              <label for="fail">FAIL</label>
+              <input type="radio" id="unattempt" name="result" value="DID NOT ATTEMPT">
+              <label for="unattempt">DID NOT ATTEMPT</label><br>
+            </form>
+          </div>
+        </li>
+    <%} %>
+    </ul>
+    <button id="add-btn" type="submit" value="interviews"><a href="/interview/newInterview">Set an Interview</a></button>
+    </div>
+
+  </div>
+</main>

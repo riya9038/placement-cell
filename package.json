@@ -1,0 +1,38 @@
+{
+  "name": "placement-cell",
+  "version": "1.0.0",
+  "description": "Placement cell",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riya9038/placement-cell.git"
+  },
+  "author": "Riya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riya9038/placement-cell/issues"
+  },
+  "homepage": "https://github.com/riya9038/placement-cell#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "isomorphic-fetch": "^3.0.0",
+    "mongoose": "^6.1.3",
+    "nodemailer": "^6.7.2",
+    "passport": "^0.5.2",
+    "passport-google-oauth": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "util": "^0.12.4"
+  }
+}

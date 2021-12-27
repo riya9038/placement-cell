@@ -1,0 +1,69 @@
+header {
+    background-color: rgb(39, 57, 117);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+  }
+  .buttons{
+    width:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons div {
+    width: 35%;
+    height: 50%;
+    border-radius: 6px;
+    /* background-color: blue; */
+    /* border: 2px solid rgb(110, 110, 245); */
+    margin-right: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: serif;
+  }
+  h2 {
+    color: wheat;
+    margin-left: 10px;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    background-color: beige;
+    height: 100%;
+    width:100%;
+    margin-top: 10px;
+  }
+  #add-btn{
+    background-color: orange;
+    margin:10px;
+  }
+  #add-btn a{
+    color:black;
+  }
+  #btn button a{
+    color: black;
+  }
+  #btn button:active{
+    background-color: orange;
+  }
+  .list{
+    width:90%;
+    background-color: aquamarine;
+    margin:10px;
+  }
+  #student-info{
+    background-color: antiquewhite;
+    margin:10px;
+    text-align: left;
+  }
